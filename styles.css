@@ -1,8 +1,15 @@
 
 @font-face{
     font-family: 'cochocib scipt ';
-    src: url('fonts/cochocib script latin pro/cochocib script latin pro.ttf');
+    src: url('fonts/cochocib script latin pro/cochocib-script-latin-pro.ttf');
     font-style: bold;
+    font-weight: 100
+}
+
+@font-face{
+    font-family: 'arington ';
+    src: url('fonts/arington/Arington_Demo.ttf');
+    font-style: normal;
     font-weight: 100
 }
 
