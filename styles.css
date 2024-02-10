@@ -1,1 +1,28 @@
 
+@font-face{
+    font-family: 'cochocib scipt ';
+    src: url('fonts/cochocib script latin pro/cochocib script latin pro.ttf');
+    font-style: bold;
+    font-weight: 100
+}
+
+@font-face{
+    font-family: 'century-gothic';
+    src: url('fonts/century gothic/Century Gothic.otf');
+    font-style: normal;
+    font-weight: 100
+}
+
+@font-face{
+    font-family: 'nyala';
+    src: url('fonts/nyala/nyala.ttf');
+    font-style: normal;
+    font-weight: 100
+}
+
+@font-face{
+    font-family: 'lato';
+    src: url('fonts/lato/Lato-Regular.ttf');
+    font-style: normal;
+    font-weight: 100
+}
