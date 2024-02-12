@@ -1,5 +1,23 @@
+/* FONTS */
+@font-face {
+    font-family: "cochocib script";
+    src: url("fonts/cochocib latin/cochocib-script-latin-pro-regular.ttf");
+}
+@font-face {
+    font-family: "arington";
+    src: url(fonts/arington/Arington_Demo.ttf);
+}
+@font-face {
+    font-family: "nyala";
+    src: url(fonts/nyala/nyala.ttf);
+}
+@font-face {
+    font-family: "autumn in november";
+    src: url(fonts/autumn-in-november/Autumn\ in\ November.ttf);
+}
+
 body {
-    font-family: "Lato", sans-serif;
+    background-color: #fae8eb;
 }
 
 .sidenav {
@@ -66,8 +84,10 @@ body {
 }
 
 #main h2 {
+    font-family: "autumn in november";
+    font-size: 100px;
     flex: 1; /* Take remaining space */
     text-align: center; /* Center the text within the available space */
-    color: black; /* Set the color of the title */
+    color: pink; /* Set the color of the title */
 }
 
