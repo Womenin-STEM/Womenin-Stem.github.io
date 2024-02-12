@@ -59,27 +59,16 @@ body {
 /* MAIN */
 #main {
     transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
-/* HEADER */
-#main {
+    padding: 10, 12px;
     display: flex;
-    align-items: left;
     color: #fff;
-    padding: 16px;
-    transition: margin-left .5s;
 }
 
 #main span {
     font-size: 30px;
     cursor: pointer;
     color: #FF5F8D; /* Set the color of the menu icon */
+    float: left;
 }
 
 #main h2 {
@@ -90,8 +79,13 @@ body {
     color: #FF5F8D; /* Set the color of the title */
 }
 
+#main img { 
+    float: left;
+}
+
+
 /* BODY TEXT */
 body {
     font-family: 'century gothic';
-    margin: 0px
+    margin: 0px;
 }
