@@ -1,4 +1,10 @@
+/* COLOURS */
+body {background-color: #f7e6ea;}
 
+h1{color: #8A2846;}
+
+
+/* FONTS */
 @font-face{
     font-family: 'cochocib scipt ';
     src: url('fonts/cochocib script latin pro/cochocib-script-latin-pro.ttf');
