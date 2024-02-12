@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* COLOURS */
 body {background-color: #f7e6ea;}
 
@@ -38,4 +39,12 @@ h1{color: #8A2846;}
     src: url('fonts/lato/Lato-Regular.ttf');
     font-style: normal;
     font-weight: 100
+=======
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+>>>>>>> 05775f4be68ba2af78adc7c9b6a2ca4cadd312d4
 }
