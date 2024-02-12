@@ -1,50 +1,43 @@
-<<<<<<< HEAD
-/* COLOURS */
-body {background-color: #f7e6ea;}
-
-h1{color: #8A2846;}
-
-
-/* FONTS */
-@font-face{
-    font-family: 'cochocib scipt ';
-    src: url('fonts/cochocib script latin pro/cochocib-script-latin-pro.ttf');
-    font-style: bold;
-    font-weight: 100
-}
-
-@font-face{
-    font-family: 'arington ';
-    src: url('fonts/arington/Arington_Demo.ttf');
-    font-style: normal;
-    font-weight: 100
-}
-
-@font-face{
-    font-family: 'century-gothic';
-    src: url('fonts/century gothic/Century Gothic.otf');
-    font-style: normal;
-    font-weight: 100
-}
-
-@font-face{
-    font-family: 'nyala';
-    src: url('fonts/nyala/nyala.ttf');
-    font-style: normal;
-    font-weight: 100
-}
-
-@font-face{
-    font-family: 'lato';
-    src: url('fonts/lato/Lato-Regular.ttf');
-    font-style: normal;
-    font-weight: 100
-=======
-*{
-    padding: 0;
+.navbar ul {
+    list-style: none;
     margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+body{
+    margin: 0px;
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.navbar u1{
+    list-style-type: none;
+    background-color: palevioletred;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar a{
+    color: black;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box; 
->>>>>>> 05775f4be68ba2af78adc7c9b6a2ca4cadd312d4
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: white;
 }
