@@ -15,7 +15,14 @@
     font-family: "autumn in november";
     src: url(fonts/autumn-in-november/Autumn\ in\ November.ttf);
 }
-
+@font-face {
+    font-family: "riesling";
+    src: url(fonts/riesling/riesling.ttf);
+}
+@font-face {
+    font-family: "valentines day";
+    src: url("fonts/valentines day/Valentines Day.otf");
+}
 /* BODY 1 */
 body {
     background-color: #fae8eb;
@@ -72,11 +79,15 @@ body {
 }
 
 #main h2 {
-    font-family: "autumn in november";
-    font-size: 100px;
+    font-family: "valentines day";
+    font-size: 150px;
     flex: 1; /* Take remaining space */
     text-align: center; /* Center the text within the available space */
     color: #FF5F8D; /* Set the color of the title */
+    text-decoration: underline overline double 2px;/* Add an underline and overline to the title */
+    text-decoration-skip-ink: none; /* Ensure that the underline and overline do not cut through the text */
+    text-underline-offset: 0.05em;
+    
 }
 
 /* #logo {
