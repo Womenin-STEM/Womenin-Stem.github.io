@@ -16,10 +16,12 @@
     src: url(fonts/autumn-in-november/Autumn\ in\ November.ttf);
 }
 
+/* BODY 1 */
 body {
     background-color: #fae8eb;
 }
 
+/* NAVIGATION BAR */
 .sidenav {
     height: 100%;
     width: 0;
@@ -54,6 +56,7 @@ body {
     margin-left: 50px;
 }
 
+/* MAIN */
 #main {
     transition: margin-left .5s;
     padding: 16px;
@@ -64,11 +67,7 @@ body {
     .sidenav a {font-size: 18px;}
 }
 
-body {
-    font-family: "Lato", sans-serif;
-    margin: 0;
-}
-
+/* HEADER */
 #main {
     display: flex;
     align-items: left;
@@ -80,7 +79,7 @@ body {
 #main span {
     font-size: 30px;
     cursor: pointer;
-    color: pink; /* Set the color of the menu icon */
+    color: #FF5F8D; /* Set the color of the menu icon */
 }
 
 #main h2 {
@@ -88,6 +87,11 @@ body {
     font-size: 100px;
     flex: 1; /* Take remaining space */
     text-align: center; /* Center the text within the available space */
-    color: pink; /* Set the color of the title */
+    color: #FF5F8D; /* Set the color of the title */
 }
 
+/* BODY TEXT */
+body {
+    font-family: 'century gothic';
+    margin: 0px
+}
