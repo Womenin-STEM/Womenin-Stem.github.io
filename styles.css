@@ -216,6 +216,7 @@ body {
     margin-bottom: 60px;
 }
 .section-title h1{
+    text-align: center;
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
@@ -226,4 +227,26 @@ body {
 .services{
     min-height: 100vh;
     padding:80px 0;
+}
+.services.service-items{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.services.service-items.item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+}
+.services.service-items.item-inner{
+    border: #f33c3c 1px solid;
+    padding: 30px;
+}
+.services.service-items.item-inner h3{
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+}
+.services.service-items.item-inner p{
+    font-size: 14px;
+    color: red;
 }
