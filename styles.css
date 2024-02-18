@@ -205,7 +205,25 @@ body {
     max-width: 1170px;
     margin:auto;
 }
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+.section-title{
+    background-color: #F26A8D;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 60px;
+}
+.section-title h1{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+    font-family: cohonig script;
+}
 .services{
-    background-color: red;
     min-height: 100vh;
+    padding:80px 0;
 }
