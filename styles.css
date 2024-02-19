@@ -224,6 +224,20 @@ body {
     color: white;
     font-family: cohonig script;
 }
+.section-titlecontact{
+    background-color: #F26A8D;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 60px;
+}
+.section-titlecontact span{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+    font-family: nyala;
+}
 .services{
     min-height: 100vh;
     padding:80px 0;
@@ -250,3 +264,107 @@ body {
     font-size: 14px;
     color: red;
 }
+.containercontact{
+    width: 100%;
+    min-height: 100vh;
+    background: pink;
+    padding: 10px;
+}
+.card{
+    width: 350px;
+    height: 515px;
+    margin:100px;
+    perspective: 1000px;
+}
+.card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.front, .back{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front{
+    background: url(images/user.png);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white
+}
+.front h2{
+    font-weight: 500;
+}
+.front p{
+    color: #ccc;
+    font-size: 13px;
+}
+.front button{
+    width: 120px;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+}
+.back{
+    background: white;
+    color: black;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+}
+.back h1{
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+.back h1 span{
+    font-weight: 400;
+}
+.back p{
+    font-size: 14px;
+}
+.back p span{
+    font-weight: 600;
+}
+.back img{
+    width: 120px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.col{
+    flex: 1;
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    position: relative;
+}
+.col h2{
+    font-size: 20px;
+}
+.col::after{
+    content: '';
+    width: 1.5px;
+    height: 20px;
+    background: #7800ad;
+    position: absolute;
+    top: 5px;
+    right: 0;
+} 
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
