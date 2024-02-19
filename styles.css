@@ -106,7 +106,7 @@ body {
 
 
 /*HOME PAGE BLOG - MOST RECENTS*/
-#blog{
+#recent{
     display: flex; 
     justify-content: center;
     align-items: center; 
@@ -116,14 +116,14 @@ body {
 
 }
 
-.blog-box{
+.re3cent-box{
     width:350px;
     background-color: white;
     border: 1px  sold #ececec;
     margin: 20px
 }
 
-.blog-container{
+.recent-container{
     display: flex;
     justify-content: center; 
     align-items:center; 
@@ -131,53 +131,53 @@ body {
     flex-wrap: wrap;
 }
 
-.blog-heading span{
+.recent-heading span{
 
     color:#FF5F8D
     
 }
 
-.blog-box{
+.recent-box{
     width:350px;
     background-color:white;
     border: 1px solid #ececec;
     margin: 20px;
 }
 
-.blog-img{
+.recent-img{
     width: 100%;
     height: 100%;
 }
 
-.blog-img img{
+.recent-img img{
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.blog-text{
+.recent-text{
     padding: 30px;
     display: flex; 
     flex-direction: column;
 }
 
-.blog-text span{
+.recent-text span{
     color: #f33c3c;
     font-size: 0.9rem;
 }
 
-.blog-text  .blog-title{
+.recent-text  .blog-title{
     font-size: 1.3fem;
     font-weight: 500; 
     color: black;
 }
 
-.blog-text  .blog-title:hover{
+.recent-text  .blog-title:hover{
     color: #f33c3c;
     transition: all ease 0.3s;
 }
 
-.blog-text p{
+.recent-text p{
     
     color: black;
     font-size: 1.3fem;
@@ -189,7 +189,7 @@ body {
     margin: 20px 0px; 
 }
 
-.blog-text a:hover{
+.recent-text a:hover{
     
     color: #f33c3c;
     transition: all ease 0.3s;
@@ -197,15 +197,18 @@ body {
 }
 
 /* BLOG.HTML */
+
+
+/* CONTACT.HTML */
 *{
     box-sizing:border-box;
     margin:0;
 }
-.container{
+.contact-container{
     max-width: 1170px;
     margin:auto;
 }
-.row{
+.contact-row{
     display:flex;
     flex-wrap:wrap;
 }
