@@ -197,43 +197,33 @@ body {
 }
 
 /* BLOG.HTML */
-/* BG */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-/* CONTENT BOX */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-/* CLOSE BUTTON */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-/* CONTACT.HTML */
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+.section-title{
+    background-color: #F26A8D;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 60px;
+}
+.section-title h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+    font-family: cohonig script;
+}
 .section-titlecontact{
     background-color: #F26A8D;
     max-width: 100%;
@@ -248,8 +238,6 @@ body {
     color: white;
     font-family: nyala;
 }
-<<<<<<< HEAD
-=======
 .services{
     min-height: 100vh;
     padding:80px 0;
@@ -276,7 +264,6 @@ body {
     font-size: 14px;
     color: red;
 }
->>>>>>> parent of 2db0705 (Merge branch 'main' of https://github.com/Womenin-STEM/Womenin-Stem.github.io)
 .containercontact{
     width: 100%;
     min-height: 100vh;
@@ -368,6 +355,19 @@ body {
 .col h2{
     font-size: 20px;
 }
+.col::after{
+    content: '';
+    width: 1.5px;
+    height: 20px;
+    background: #7800ad;
+    position: absolute;
+    top: 5px;
+    right: 0;
+} 
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
 .col::after{
     content: '';
     width: 1.5px;
