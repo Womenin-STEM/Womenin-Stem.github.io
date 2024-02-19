@@ -248,6 +248,35 @@ body {
     color: white;
     font-family: nyala;
 }
+<<<<<<< HEAD
+=======
+.services{
+    min-height: 100vh;
+    padding:80px 0;
+}
+.services.service-items{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.services.service-items.item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+}
+.services.service-items.item-inner{
+    border: #f33c3c 1px solid;
+    padding: 30px;
+}
+.services.service-items.item-inner h3{
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+}
+.services.service-items.item-inner p{
+    font-size: 14px;
+    color: red;
+}
+>>>>>>> parent of 2db0705 (Merge branch 'main' of https://github.com/Womenin-STEM/Womenin-Stem.github.io)
 .containercontact{
     width: 100%;
     min-height: 100vh;
