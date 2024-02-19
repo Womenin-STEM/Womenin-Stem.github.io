@@ -257,8 +257,17 @@ body {
 }
 .services.service-items.item-inner h3{
     font-size: 20px;
-    color: red;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    position:relative;
+}
+.services.service-items.item-inner h3::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
 }
 .services.service-items.item-inner p{
     font-size: 14px;
