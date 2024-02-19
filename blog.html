@@ -31,86 +31,61 @@
         document.getElementById("main").style.marginLeft= "0";
       }
       </script>
-<<<<<<< HEAD
-      
-      <!-- POST 1 -->
-      <!-- OPEN -->
-      <button id="myBtn">POST 1</button>
-      <!-- MODAL -->
-      <div id="myModal" class="modal">
-         <!-- CONTENT -->
-         <div class="post-content">
-            <span class="close">&times;</span>
-            <h2>POST 1 CONTENT TESTER </h2>
-=======
 
-      <section class "services">
-         <div class="container">
-            <div class="row">
-               <div class="section-title">
-                  <h1>Posts</h1>
-               </div>
-            </div>
-            <div class="row">
-               <!-- Blog Post 1 -->
-               <div class="item">
-                  <div class="item-inner">
-                     <h3>POST 1</h3>
-                     <p>Post 1 content preview </p>
-                     <button class="btn">Read More</button>
-                  </div>
-               </div>
-               <!-- Blog Post 2 -->
-               <div class="item">
-                  <div class="item-inner">
-                     <h3>POST 2</h3>
-                     <p>Post 2 content preview </p>
-                     <button class="btn">Read More</button>
-                  </div>
-               </div>
-               <!-- Blog Post 3 -->
-               <div class="item">
-                  <div class="item-inner">
-                     <h3>POST 3</h3>
-                     <p>Post 3 content preview </p>
-                     <button class="btn">Read More</button>
-                  </div>
-               </div>
-            </div>
->>>>>>> parent of 2db0705 (Merge branch 'main' of https://github.com/Womenin-STEM/Womenin-Stem.github.io)
-         </div>
+      <div class="blog-tiles">
+        <div class="blog-tile" onclick="openModal('post1')">Blog Post 1</div>
+        <div class="blog-tile" onclick="openModal('post2')">Blog Post 2</div>
+        <div class="blog-tile" onclick="openModal('post3')">Blog Post 3</div>
+        <div class="blog-tile" onclick="openModal('post4')">Blog Post 4</div>
+        <!-- Add more tiles as needed -->
+    </div>
+
+    <!-- Modals -->
+    <div id="post1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('post1')">&times;</span>
+            <p>Content for Blog Post 1 goes here.</p>
+        </div>
+    </div>
+
+    <div id="post2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('post2')">&times;</span>
+            <p>Content for Blog Post 2 goes here.</p>
+        </div>
+    </div>
+
+    <div id="post3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('post3')">&times;</span>
+            <p>Content for Blog Post 3 goes here.</p>
+        </div>
+    </div>
+
+    <div id="post4" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('post4')">&times;</span>
+          <p>Content for Blog Post 4 goes here.</p>
       </div>
+  </div>
 
-      <script>
-         // Get the modal
-         var modal = document.getElementById("myModal");
-         
-         // Get the button that opens the modal
-         var btn = document.getElementById("myBtn");
-         
-         // Get the <span> element that closes the modal
-         var span = document.getElementsByClassName("close")[0];
-         
-         // When the user clicks the button, open the modal 
-         btn.onclick = function() {
-           modal.style.display = "block";
-         }
-         
-         // When the user clicks on <span> (x), close the modal
-         span.onclick = function() {
-           modal.style.display = "none";
-         }
-         
-         // When the user clicks anywhere outside of the modal, close it
-         window.onclick = function(event) {
-           if (event.target == modal) {
-             modal.style.display = "none";
-           }
-         }
-         </script>
+    <script>
+        function openModal(postId) {
+            var modal = document.getElementById(postId);
+            modal.style.display = "block";
+        }
 
+        function closeModal(postId) {
+            var modal = document.getElementById(postId);
+            modal.style.display = "none";
+        }
+
+        // Close the modal if the user clicks anywhere outside of it
+        window.onclick = function (event) {
+            if (event.target.classList.contains("modal")) {
+                event.target.style.display = "none";
+            }
+        };
+    </script>
 </body>
-</html> 
-      
-
-      
+</html>
