@@ -218,6 +218,14 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    z-index: 1;
+  }
+
 .modal-content {
     position: absolute;
     top: 50%;
@@ -333,7 +341,7 @@ body {
     backface-visibility: hidden;
 }
 .front{
-    background: url(images/user.png);
+    background: url(images/mini-pfp.png);
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
