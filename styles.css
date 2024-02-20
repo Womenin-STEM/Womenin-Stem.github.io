@@ -201,7 +201,9 @@ body {
 .blog-tiles {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between; /* Default: Distribute tiles with space between them */
 }
+
 .blog-tile {
     width: 200px;
     height: 100px;
@@ -209,6 +211,19 @@ body {
     margin: 10px;
     padding: 10px;
     cursor: pointer;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 800px) {
+    .blog-tiles {
+        justify-content: center; /* Center tiles for screens up to 800px */
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-tiles {
+        justify-content: flex-start; /* Align tiles to the start for screens up to 600px */
+    }
 }
 
 
