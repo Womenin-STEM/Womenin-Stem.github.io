@@ -333,7 +333,7 @@ body {
     backface-visibility: hidden;
 }
 .front{
-    background: url(images/mini-pfp.png);
+    background: url(images/user.png);
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
