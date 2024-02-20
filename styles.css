@@ -198,10 +198,14 @@ body {
 
 /* BLOG.HTML */
 /* Styles for tiles and modals */
+.blog-tiles {
+    display: flex;
+    flex-wrap: wrap;
+}
 .blog-tile {
     width: 200px;
     height: 100px;
-    background-color: #ddd;
+    background-color: #ce6a85;
     margin: 10px;
     padding: 10px;
     cursor: pointer;
