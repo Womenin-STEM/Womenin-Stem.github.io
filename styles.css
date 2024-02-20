@@ -288,10 +288,10 @@ body {
     flex-wrap:wrap;
 }
 .section-title{
-    background-color: rgb(242, 106, 141,0.5);
+    background-color: #F26A8D;
     max-width: 100%;
     flex: 0 0 100%;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 .section-title h1{
     text-align: center;
@@ -300,20 +300,21 @@ body {
     text-transform: uppercase;
     margin-bottom: 20px;
     color: white;
-    font-family: centruy gothic;
+    font-family: cohonig script;
 }
 .section-titlecontact{
+    background-color: #F26A8D;
     max-width: 100%;
     flex: 0 0 100%;
     margin-bottom: 60px;
 }
-.section-titlecontact span {
-    font-family: 'century gothic';
-    color: #FF5F8D;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section-titlecontact span{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+    font-family: nyala;
 }
 .services{
     min-height: 100vh;
@@ -344,6 +345,7 @@ body {
 .containercontact{
     width: 100%;
     min-height: 100vh;
+    background: pink;
     padding: 10px;
 }
 .card{
