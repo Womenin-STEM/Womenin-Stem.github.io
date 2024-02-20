@@ -198,34 +198,47 @@ body {
 
 /* BLOG.HTML */
 /* Styles for tiles and modals */
+/* Styles for tiles and modals */
 .blog-tiles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Default: Distribute tiles with space between them */
+    justify-content: space-between;
 }
 
 .blog-tile {
-    width: 200px;
-    height: 100px;
-    background-color: #ce6a85;
+    width: auto;
+    height: auto;
+    background-color:rgb(206, 106, 133,0.5);
     margin: 10px;
     padding: 10px;
     cursor: pointer;
+    text-align: center; /* Center the text */
+}
+
+.blog-tile img {
+    max-width: 100%; /* Limit image width to the width of its container */
+    height: auto;
+    max-height: 175px; /* Set a specific height for the image */
+    display: block; /* Remove extra space below inline images */
+    margin: 0 auto; /* Center the image */
+}
+
+.tile-text {
+    margin-top: 10px; /* Add space between the image and text */
 }
 
 /* Media queries for responsive design */
 @media (max-width: 800px) {
     .blog-tiles {
-        justify-content: center; /* Center tiles for screens up to 800px */
+        justify-content: center;
     }
 }
 
 @media (max-width: 600px) {
     .blog-tiles {
-        justify-content: flex-start; /* Align tiles to the start for screens up to 600px */
+        justify-content: flex-start;
     }
 }
-
 
 .modal {
     display: none;
@@ -236,6 +249,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 /* Modal Header */
 /* Container holding the image and the text */
