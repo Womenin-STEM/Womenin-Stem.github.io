@@ -473,3 +473,19 @@ body {
     transform: rotateY(180deg);
 }
 
+
+
+.parallax-container {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+.parallax-layer {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
