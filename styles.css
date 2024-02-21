@@ -196,7 +196,7 @@ body {
 .blog-tiles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .blog-tile {
@@ -206,19 +206,20 @@ body {
     margin: 10px;
     padding: 10px;
     cursor: pointer;
-    text-align: center /* Center the text */
+    text-align: center; /* Center the text */
+    font-family: "Century Gothic";
 }
 
 .blog-tile img {
     max-width: 100%; /* Limit image width to the width of its container */
-    height: auto;
+    height: 90%;
     max-height: 175px; /* Set a specific height for the image */
     display: block; /* Remove extra space below inline images */
     margin: 0 auto; /* Center the image */
 }
 
 .tile-text {
-    margin-top: 10px; /* Add space between the image and text */
+    margin-top: 100px; /* Add space between the image and text */
 }
 
 /* Media queries for responsive design */
@@ -233,7 +234,6 @@ body {
         justify-content: flex-start;
     }
 }
-
 
 .modal {
     display: none;
@@ -252,16 +252,20 @@ body {
     position: relative;
   }
   
-  /* Bottom right text */
   .text-block {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-    color: rgb(133, 92, 92);
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    top: 35%;
+    left: 50%; /* Center the text horizontally */
+    color: black;
+    font-family: "Autumn in November";
+    font-size: 30px;
+    transform: translateX(-50%); /* Center the text horizontally */
+    text-align: center; /* Center the text within its container */
+    padding: 0 20px; /* Add padding */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
 
 .modal-content {
     position: absolute;
