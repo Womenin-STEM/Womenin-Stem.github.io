@@ -206,20 +206,21 @@ body {
 }
 
 .blog-tile {
-    width: 300px; /* Set a fixed width for the tiles */
-    height: 240px; /* Set a fixed height for the tiles with additional space for text */
-    background-color: rgb(206, 106, 133, 0.5);
+    width: auto;
+    height: auto;
+    background-color:rgb(206, 106, 133,0.5);
     margin: 10px;
     padding: 10px;
     cursor: pointer;
-    text-align: center; /* Center the text */
-    overflow: hidden; /* Hide any content that overflows the tile */
+    text-align: center /* Center the text */
 }
 
 .blog-tile img {
-    width: 100%; /* Make the image fill the tile */
-    height: 90%; /* Make the image fill the tile */
-    object-fit: cover; /* Crop the image to cover the entire tile */
+    max-width: 100%; /* Limit image width to the width of its container */
+    height: auto;
+    max-height: 175px; /* Set a specific height for the image */
+    display: block; /* Remove extra space below inline images */
+    margin: 0 auto; /* Center the image */
 }
 
 .tile-text {
@@ -473,19 +474,12 @@ body {
     transform: rotateY(180deg);
 }
 
-
-
-.parallax-container {
-    overflow: hidden;
-    height: 100vh;
-    position: relative;
-}
-
-.parallax-layer {
+.backgrounds-video {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind other content */
 }
