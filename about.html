@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Your Page Title</title>
 </head>
-<body style="margin: 0; overflow: hidden;">
+<body>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -14,26 +16,49 @@
         <a href="contact.html">Contact</a>
     </div>
       
-    <div id="main">
-        <h2>About us</h2>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    </div>
+
     
-    <video class="backgrounds-video" autoplay loop muted playsinline>
+    
+    <div id="parallax-main">
+
+        <h2>About us</h2>
+
+    </div>
+
+    <video class="background-video" autoplay loop muted playsinline>
         <source src="Videos/Video1.mov" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
+    <section class="section">
+        <h2>Who we are</h2>
+        <p>We are Women in Stem</p>
+    </section>
+
+
+    <div id ="menu-bar">
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    </div>
+    
+    
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("parallax-main").style.marginLeft = "2500px";
+            document.getElementById("menu-bar").style.marginLeft = "250px";
+           
         }
         
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("parallax-main").style.marginLeft = "0px";
+            document.getElementById("menu-bar").style.marginLeft = "0";
+
+           
         }
+
     </script>
 
 </body>

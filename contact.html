@@ -17,20 +17,34 @@
       
       <div id="main">
         <h2>Welcome to Contact Details</h2>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 
         </div>
       
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-      }
+            
+        <div id ="menu-bar">
+
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  
+        </div>
       
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-      }
-      </script>
+   
+  
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.getElementById("menu-bar").style.marginLeft = "250px";
+              
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0px";
+                document.getElementById("menu-bar").style.marginLeft = "0";
+  
+              
+            }
+                
+          </script>
 
         <section class "services">
           <div class="contact-container">
