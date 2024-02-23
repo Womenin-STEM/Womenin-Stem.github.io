@@ -262,7 +262,7 @@ body {
     position: absolute;
     top: 35%;
     left: 50%; /* Center the text horizontally */
-    color: rgb(133, 92, 92);
+    color: black;
     font-family: "Autumn in November";
     font-size: 30px;
     transform: translateX(-50%); /* Center the text horizontally */
