@@ -31,7 +31,7 @@
             function openNav() {
                 document.getElementById("mySidenav").style.width = "250px";
                 document.getElementById("menu-bar").style.marginLeft = "250px";
-                
+            
             }
             
             function closeNav() {
@@ -43,10 +43,10 @@
 
       </script> 
         
-    
+
      
 
-      <div class="blog-tiles">
+    <div class="blog-tiles">
         <div class="blog-tile" onclick="openModal('post1')">
             <img src="images/img1.png" alt="Blog Post 1 Image">
             Equality among peers
@@ -84,7 +84,7 @@
             Blog Post 9
         </div>
 
-    
+
 
     <!-- Modals -->
     <div id="post1" class="modal">
@@ -234,12 +234,12 @@
             var modal = document.getElementById(postId);
             modal.style.display = "block";
         }
-    
+
         function closeModal(postId) {
             var modal = document.getElementById(postId);
             modal.style.display = "none";
         }
-    
+
         // Close the modal if the user clicks anywhere outside of it
         window.onclick = function (event) {
             if (event.target.classList.contains("modal")) {
@@ -247,5 +247,5 @@
             }
         };
     </script>
-</body>
-</html>
+    </body>
+    </html>
