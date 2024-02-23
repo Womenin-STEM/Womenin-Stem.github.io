@@ -216,8 +216,8 @@ body {
 }
 
 .blog-tile img {
-    max-width: 100%; /* Limit image width to the width of its container */
-    height: auto;
+    max-width: 300px; /* Limit image width to the width of its container */
+    height: 90%;
     max-height: 175px; /* Set a specific height for the image */
     display: block; /* Remove extra space below inline images */
     margin: 0 auto; /* Center the image */
@@ -239,7 +239,6 @@ body {
         justify-content: flex-start;
     }
 }
-
 
 .modal {
     display: none;
