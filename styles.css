@@ -291,43 +291,47 @@ body {
 *{
     box-sizing:border-box;
     margin:0;
+    padding:0;
 }
 .contact-container{
-    max-width: 1170px;
+    max-width: 100%px;
     margin:auto;
 }
 .contact-row{
     display:flex;
     flex-wrap:wrap;
 }
-.section-title{
+.section-title {
     background-color: #F26A8D;
+    width: 100%; /* Use viewport width to stretch across the entire window */
     max-width: 100%;
     flex: 0 0 100%;
-    margin-bottom: 60px;
 }
-.section-title h1{
+
+.section-title h1 {
+    background-color: rgba(242,106,141,255,0.5); /* Apply background color to the h1 element */
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 20px;
     color: white;
-    font-family: cohonig script;
+    font-family: 'Cohonig Script';
 }
-.section-titlecontact{
-    background-color: #F26A8D;
+
+.section-titlecontact {
+    background-color: rgba(242,106,141,255);
+    width: 100vw; /* Use viewport width to stretch across the entire window */
     max-width: 100%;
     flex: 0 0 100%;
-    margin-bottom: 60px;
 }
-.section-titlecontact span{
+.section-titlecontact span {
+    display: block; /* Ensure the text takes the full width of the container */
     text-align: center;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
     color: white;
-    font-family: nyala;
+    font-family: 'Cohonig Script'; /* Make sure to enclose font names with spaces in quotes */
 }
 .services{
     min-height: 100vh;
@@ -355,16 +359,15 @@ body {
     font-size: 14px;
     color: red;
 }
-.containercontact{
-    width: 100%;
-    min-height: 100vh;
-    background: pink;
-    padding: 10px;
+.containercontact {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap;
 }
 .card{
     width: 350px;
     height: 515px;
-    margin:100px;
+    margin:20px;
     perspective: 1000px;
 }
 .card-inner{
@@ -382,9 +385,6 @@ body {
     backface-visibility: hidden;
 }
 .front{
-    background: url(images/mini-pfp.png);
-    background-size: cover;
-    background-position: center;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
