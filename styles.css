@@ -517,18 +517,6 @@ body {
 }
 
 
-<<<<<<< Updated upstream
-#parallax-main h2 {
-    font-family: "valentines day";
-    font-size: 150px;
-    flex: 1;
-    text-align: center;
-    color: #FF5F8D;
-    text-decoration: underline overline double 2px;
-    text-decoration-skip-ink: none;
-    text-underline-offset: 0.05em;
-}
-=======
 section h1{
     font-family:"cochocib script";
     font-size: 50px;
@@ -541,4 +529,3 @@ section p{
     width: 85%;
     text-align: justify;
 };
->>>>>>> Stashed changes
