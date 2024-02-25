@@ -65,11 +65,16 @@ body {
 }
 
 /* MAIN */
-#main {
-    transition: margin-left .5s;
-    padding: 10, 12px;
+
+#about-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
     display: flex;
     color: #fff;
+    z-index: 2;
 }
 
 
@@ -472,15 +477,7 @@ body {
     transform: rotateY(180deg);
 }
 
-.backgrounds-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Place the video behind other content */
-}
+
 
 /*About*/
 
@@ -517,15 +514,105 @@ body {
 }
 
 
-section h1{
-    font-family:"cochocib script";
-    font-size: 50px;
+#parallax-main h2 {
+    font-family: "valentines day";
+    font-size: 150px;
+    flex: 1;
+    text-align: center;
+    color: #FF5F8D;
+    text-decoration: underline overline double 2px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.05em;
 }
-section p{
-    font-family:century gothic;
-    font-size: 20px;
-    margin-top: 30px;
-    line-height: 30px;
-    width: 85%;
-    text-align: justify;
-};
+
+
+/*About*/
+
+
+
+#menu-bar span{
+    font-size: 30px;
+    cursor: pointer;
+    color: #F26A8D;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    z-index: 2;
+
+}
+
+#menu-bar {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
+    display: flex;
+    color: #fff;
+    z-index: 2; /* Adjusted to a higher value */
+}
+
+#about-main {
+    position: absolute;
+    color: #FF5F8D;
+    transform: translateY(-50%, 50%);
+    z-index: 1; /* Ensure the about-main is above the mountain */
+}
+
+#about-main h2 {
+    font-family: "valentines day";
+    font-size: 150px;
+    flex: 1;
+    text-align: center;
+    color: #FF5F8D;
+    text-decoration: underline overline double 2px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.05em;
+    z-index: -5; /* Adjusted to a positive value */
+}
+
+#Parallax {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#Parallax img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+}
+
+
+
+
+#moon {
+    z-index: -2; /* Adjusted to a higher value */
+}
+
+
+#background{
+    z-index:3;
+}
+
+#right-hills{
+
+    z-index: 4;
+}
+
+#left-hills{
+    z-index:3;
+}
+@keyframes loadAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
