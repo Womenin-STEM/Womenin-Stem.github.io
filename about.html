@@ -1,8 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>About Us</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            background: url("images/header1.png") no-repeat center center fixed;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            color: #000;
+            flex: none;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            border: 2px solid #FF5F8D; /* Add a 2px solid black border */
+            padding: 20px; /* Add padding to create space between text and border */
+        }
+    </style>
 </head>
 <body>
 
@@ -12,30 +38,49 @@
         <a href="about.html">About</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
-      </div>
-      
-      <div id="main">
-        <h2>About us</h2>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 
+    </div>
+
+    <div id ="menu-bar">
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    </div>
+    
+    
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("menu-bar").style.marginLeft = "250px";
+
+        }
         
-        </div>
-      
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-      }
-      </script>
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("menu-bar").style.marginLeft = "0";
 
-      <p>Testing body if it can still be seen with nav bar coming out the side of not?</p>
-         
-      </body>
-      </html> 
-      
+           
+        }
+        
+    </script>
 
-      
+    <section>
+        <h1>WHO ARE WE?</h1>
+        <p>filler section</p>
+        <p>FILLER SECTION</p>
+    </section>
+
+    <section>
+        <h1>WHAT INSPIRED US</h1>
+        <p>filler section</p>
+        <p>FILLER SECTION</p>
+    </section>
+
+    <section>
+        <h1>WHAT DO WE WANT TO DO?</h1>
+        <p>TO BE WRITTEN</p>
+        <p>FILLER SECTION</p>
+    </section>
+
+</body>
+</html>

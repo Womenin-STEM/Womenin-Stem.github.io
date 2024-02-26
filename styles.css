@@ -65,19 +65,18 @@ body {
 }
 
 /* MAIN */
-#main {
-    transition: margin-left .5s;
-    padding: 10, 12px;
+
+#about-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
     display: flex;
     color: #fff;
+    z-index: 2;
 }
 
-#main span {
-    font-size: 30px;
-    cursor: pointer;
-    color: #FF5F8D; /* Set the color of the menu icon */
-    float: left;
-}
 
 #main h2 {
     font-family: "valentines day";
@@ -198,15 +197,48 @@ body {
 
 /* BLOG.HTML */
 /* Styles for tiles and modals */
+/* Styles for tiles and modals */
+.blog-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .blog-tile {
-    width: 200px;
-    height: 100px;
-    background-color: #ddd;
+    width: auto;
+    height: auto;
+    background-color:rgb(206, 106, 133,0.5);
     margin: 10px;
     padding: 10px;
     cursor: pointer;
+    text-align: center; /* Center the text */
+    font-family: "Century Gothic";
 }
 
+.blog-tile img {
+    max-width: 100%; /* Limit image width to the width of its container */
+    height: 90%;
+    max-height: 175px; /* Set a specific height for the image */
+    display: block; /* Remove extra space below inline images */
+    margin: 0 auto; /* Center the image */
+}
+
+.tile-text {
+    margin-top: 100px; /* Add space between the image and text */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 800px) {
+    .blog-tiles {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-tiles {
+        justify-content: flex-start;
+    }
+}
 
 .modal {
     display: none;
@@ -218,13 +250,27 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+
 /* Modal Header */
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-    z-index: 1;
+/* Container holding the image and the text */
+.container {
+    position: relative;
   }
+  
+  .text-block {
+    position: absolute;
+    top: 35%;
+    left: 50%; /* Center the text horizontally */
+    color: black;
+    font-family: "Autumn in November";
+    font-size: 30px;
+    transform: translateX(-50%); /* Center the text horizontally */
+    text-align: center; /* Center the text within its container */
+    padding: 0 20px; /* Add padding */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
 
 .modal-content {
     position: absolute;
@@ -250,43 +296,47 @@ body {
 *{
     box-sizing:border-box;
     margin:0;
+    padding:0;
 }
 .contact-container{
-    max-width: 1170px;
+    max-width: 100%px;
     margin:auto;
 }
 .contact-row{
     display:flex;
     flex-wrap:wrap;
 }
-.section-title{
+.section-title {
     background-color: #F26A8D;
+    width: 100%; /* Use viewport width to stretch across the entire window */
     max-width: 100%;
     flex: 0 0 100%;
-    margin-bottom: 60px;
 }
-.section-title h1{
+
+.section-title h1 {
+    background-color: rgba(242,106,141,255,0.5); /* Apply background color to the h1 element */
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 20px;
     color: white;
-    font-family: cohonig script;
+    font-family: 'Cohonig Script';
 }
-.section-titlecontact{
-    background-color: #F26A8D;
+
+.section-titlecontact {
+    background-color: rgba(242,106,141,255);
+    width: 100vw; /* Use viewport width to stretch across the entire window */
     max-width: 100%;
     flex: 0 0 100%;
-    margin-bottom: 60px;
 }
-.section-titlecontact span{
+.section-titlecontact span {
+    display: block; /* Ensure the text takes the full width of the container */
     text-align: center;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
     color: white;
-    font-family: nyala;
+    font-family: 'Cohonig Script'; /* Make sure to enclose font names with spaces in quotes */
 }
 .services{
     min-height: 100vh;
@@ -314,16 +364,15 @@ body {
     font-size: 14px;
     color: red;
 }
-.containercontact{
-    width: 100%;
-    min-height: 100vh;
-    background: pink;
-    padding: 10px;
+.containercontact {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap;
 }
 .card{
     width: 350px;
     height: 515px;
-    margin:100px;
+    margin:20px;
     perspective: 1000px;
 }
 .card-inner{
@@ -341,9 +390,6 @@ body {
     backface-visibility: hidden;
 }
 .front{
-    background: url(images/mini-pfp.png);
-    background-size: cover;
-    background-position: center;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
@@ -354,18 +400,18 @@ body {
     font-weight: 500;
 }
 .front p{
-    color: #ccc;
+    color: black;
     font-size: 13px;
 }
 .front button{
     width: 120px;
-    border: 1px solid white;
+    border: 1px solid black;
     background: transparent;
     border-radius: 50px;
     padding: 8px 20px;
     cursor: pointer;
     margin-top: 20px;
-    color: white;
+    color: black;
 }
 .back{
     background: white;
@@ -431,3 +477,142 @@ body {
     transform: rotateY(180deg);
 }
 
+
+
+/*About*/
+
+#parallax-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
+    display: flex;
+    color: #fff;
+    z-index: 2;
+}
+
+#menu-bar span{
+    font-size: 30px;
+    cursor: pointer;
+    color: #FF5F8D;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    z-index: 2;
+}
+
+#menu-bar {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
+    display: flex;
+    color: #fff;
+    z-index: 2;
+}
+
+
+#parallax-main h2 {
+    font-family: "valentines day";
+    font-size: 150px;
+    flex: 1;
+    text-align: center;
+    color: #FF5F8D;
+    text-decoration: underline overline double 2px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.05em;
+}
+
+
+/*About*/
+
+
+
+#menu-bar span{
+    font-size: 30px;
+    cursor: pointer;
+    color: #F26A8D;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    z-index: 2;
+
+}
+
+#menu-bar {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
+    display: flex;
+    color: #fff;
+    z-index: 2; /* Adjusted to a higher value */
+}
+
+#about-main {
+    position: absolute;
+    color: #FF5F8D;
+    transform: translateY(-50%, 50%);
+    z-index: 1; /* Ensure the about-main is above the mountain */
+}
+
+#about-main h2 {
+    font-family: "valentines day";
+    font-size: 150px;
+    flex: 1;
+    text-align: center;
+    color: #FF5F8D;
+    text-decoration: underline overline double 2px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.05em;
+    z-index: -5; /* Adjusted to a positive value */
+}
+
+#Parallax {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#Parallax img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+}
+
+
+
+
+#moon {
+    z-index: -2; /* Adjusted to a higher value */
+}
+
+
+#background{
+    z-index:3;
+}
+
+#right-hills{
+
+    z-index: 4;
+}
+
+#left-hills{
+    z-index:3;
+}
+@keyframes loadAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}

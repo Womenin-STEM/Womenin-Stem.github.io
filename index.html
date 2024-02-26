@@ -6,6 +6,14 @@
     <link rel="icon" type="images/logo.png" href="/images/logo.png">
 </head>
 <body>
+
+  <style>
+    body{
+      background-color: #FFBCB8;
+    }
+
+
+  </style>
  <!-- navigation -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -15,97 +23,138 @@
         <a href="contact.html">Contact</a>
       </div>
       
-      <div id="main">
+      <div id="about-main">
         <h2>Women in Stem</h2>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-        </div>
-
-        <script>
-          function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-          }
-          
-          function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-          }
-          </script>
         
- <!-- Blog Section -->
-        <section id ="recent">
+      </div>    
 
-          <div class="recent-heading">
-            <span> My Recent Posts</span>
-          </div>
+
+      <div id ="menu-bar">
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+      </div>
+      
+  
+      <section id="Parallax">
+        <img id="background" src="images/5.png" alt="Background Image">
+        <img id="moon" src="images/8.png" alt="Moon Image">
+        <img id="mountains" src="images/7.png" alt="Mountain Image">
+        <img id="mountain1" src="images/6.png" alt="Mountain1 Image">
+        <img id="right-hills" src="images/3.png" alt="Right Hills Image">
+        <img id="left-hills" src="images/4.png" alt="Left Hills Image">
+     </section>
+    
+
+     <section id="About">
+       <!-- Blog Section -->
+       <section id ="recent">
+
+        <div class="recent-heading">
+          <span> My Recent Posts</span>
+        </div>
+       
+      </section>
+                
+<!-- Blog container -->
+        <div class="recent-container">
          
-                  
- <!-- Blog container -->
-          <div class="recent-container">
-           
-            <!--box-1-->
-            <div class ="recent-box">
-              
-              <!--img-->
-              <div class ="recent-img">
-                <img src="images/img1.png" alt="Blog">
-
-              </div>
-
-               <!--img-->
-               <div class="recent-text">
-                <span>15/02/2024 / How to Limit Stress</span>
-                <a href="blog.html" class="blog-title" >How can you deal with the stress?</a>
-                <p> This is all about how can women in STEM deals with the stress of working...</p>
-                <a href="blog.html">Read more</a>
-
-
-               </div>
-
-          </div>
-
-
           <!--box-1-->
           <div class ="recent-box">
-              
+            
             <!--img-->
             <div class ="recent-img">
-              <img src="images/img2.png" alt="Blog">
+              <img src="images/img1.png" alt="Blog">
 
             </div>
 
              <!--img-->
              <div class="recent-text">
-              <span>17/02/2024 / Famous Women in STEM</span>
-              <a href="blog.html" class="blog-title" > Introduction to Famous Women in STEM</a>
-              <p> This blog gives an introduction to famous women in STEM across different fields </p>
+              <span>15/02/2024 / How to Limit Stress</span>
+              <a href="blog.html" class="blog-title" >How can you deal with the stress?</a>
+              <p> This is all about how can women in STEM deals with the stress of working...</p>
               <a href="blog.html">Read more</a>
 
+
              </div>
-           
+
+        </div>
+
+
+        <!--box-1-->
+        <div class ="recent-box">
+            
+          <!--img-->
+          <div class ="recent-img">
+            <img src="images/img2.png" alt="Blog">
+
+          </div>
+
+           <!--img-->
+           <div class="recent-text">
+            <span>17/02/2024 / Famous Women in STEM</span>
+            <a href="blog.html" class="blog-title" > Introduction to Famous Women in STEM</a>
+            <p> This blog gives an introduction to famous women in STEM across different fields </p>
+            <a href="blog.html">Read more</a>
+
+           </div>
+         
+          </div>
+
+          <!--box-3-->
+          <div class ="recent-box">
+            
+            <!--img-->
+            <div class ="recent-img">
+              <img src="images/img3.png" alt="Blog">
+
             </div>
 
-            <!--box-3-->
-            <div class ="recent-box">
-              
-              <!--img-->
-              <div class ="recent-img">
-                <img src="images/img3.png" alt="Blog">
-
-              </div>
-
-               <!--img-->
-               <div class="recent-text">
-                <span>20/02/2024 / Networking </span>
-                <a href="blog.html" class="blog-title" >How to network in STEM field?</a>
-                <p> This is all about how can we talk to someone and connect to someone within the field.</p>
-                <a href="blog.html">Read more</a>
+             <!--img-->
+             <div class="recent-text">
+              <span>20/02/2024 / Networking </span>
+              <a href="blog.html" class="blog-title" >How to network in STEM field?</a>
+              <p> This is all about how can we talk to someone and connect to someone within the field.</p>
+              <a href="blog.html">Read more</a>
 
 
-               </div>
+             </div>
+      
+      </section>
+    
+
+    
+      <script>
+
+
+
+        function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+              document.getElementById("about-main").style.marginLeft = "250px";
+              document.getElementById("menu-bar").style.marginLeft = "250px";
+            
+          }
+          
+          function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("about-main").style.marginLeft = "0px";
+              document.getElementById("menu-bar").style.marginLeft = "0";
+
+            
+          }
+
+          window.addEventListener("scroll", () => {
+            const scrollPosition = window.scrollY;
         
-        </section>
+            document.querySelector("#mountain1").style.marginTop = `${104 * scrollPosition}px`;
+            document.querySelector("#about-main").style.marginTop = `${scrollPosition * 0.3}px`;
+            document.querySelector("#moon").style.marginTop = `${scrollPosition * 0.2}px`;
+           
+        });
+        
+        </script> 
 
+ 
 
         
 </body>
