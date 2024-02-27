@@ -499,7 +499,7 @@ body {
     position: absolute;
     top: 5px;
     left: 4px;
-    z-index: 2;
+    z-index: 5;
 }
 
 #menu-bar {
@@ -509,8 +509,7 @@ body {
     transform: translate(-50%, -50%);
     transition: opacity 0.5s;
     display: flex;
-    color: #fff;
-    z-index: 2;
+    z-index: 5;
 }
 
 
@@ -528,8 +527,6 @@ body {
 
 /*About*/
 
-
-
 #menu-bar span{
     font-size: 30px;
     cursor: pointer;
@@ -537,9 +534,10 @@ body {
     position: absolute;
     top: 5px;
     left: 4px;
-    z-index: 2;
+    z-index: 4;
 
 }
+
 
 #menu-bar {
     position: absolute;
@@ -548,15 +546,17 @@ body {
     transform: translate(-50%, -50%);
     transition: opacity 0.5s;
     display: flex;
-    color: #fff;
-    z-index: 2; /* Adjusted to a higher value */
+    color: black;
+    z-index: 4; /* Adjusted to a higher value */
 }
+
+
 
 #about-main {
     position: absolute;
     color: #FF5F8D;
     transform: translateY(-50%, 50%);
-    z-index: 1; /* Ensure the about-main is above the mountain */
+    z-index: 3; /* Ensure the about-main is above the mountain */
 }
 
 #about-main h2 {
@@ -568,7 +568,7 @@ body {
     text-decoration: underline overline double 2px;
     text-decoration-skip-ink: none;
     text-underline-offset: 0.05em;
-    z-index: -5; /* Adjusted to a positive value */
+    z-index: 3; /* Adjusted to a positive value */
 }
 
 #Parallax {
