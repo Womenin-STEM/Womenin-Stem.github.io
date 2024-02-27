@@ -3,58 +3,84 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Home Page</title>
     <link rel="icon" type="images/logo.png" href="/images/logo.png">
+    <style>
+      body {
+          background-color: #FFBCB8;
+          margin: 0;
+      }
+
+      #container {
+          position: relative;
+          z-index: 1;
+      }
+
+      #mySidenav {
+          z-index: 2;
+      }
+
+      #Parallax {
+          position: relative;
+          overflow: hidden;
+      }
+
+      #background, #moon, #mountains, #mountain1, #right-hills, #left-hills {
+          position: absolute;
+          width: 100%;
+      }
+
+      #background {
+          z-index: -6;
+          height: 100%;
+      }
+
+      #moon, #mountains, #mountain1, #right-hills, #left-hills {
+          z-index: -5;
+      }
+
+      #About {
+          padding: 20px;
+      }
+  </style>
 </head>
 <body>
 
-  <style>
-    body{
-      background-color: #FFBCB8;
-    }
+  <div id="container">
 
-
-  </style>
- <!-- navigation -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+      <!-- navigation -->
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
       </div>
-      
+
       <div id="about-main">
-        <h2>Women in Stem</h2>
-        
-      </div>    
-
-
-      <div id ="menu-bar">
-
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
+          <h2>Women in Stem</h2>
       </div>
-      
-  
+
+      <div id="menu-bar">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+
       <section id="Parallax">
-        <img id="background" src="images/5.png" alt="Background Image">
-        <img id="moon" src="images/8.png" alt="Moon Image">
-        <img id="mountains" src="images/7.png" alt="Mountain Image">
-        <img id="mountain1" src="images/6.png" alt="Mountain1 Image">
-        <img id="right-hills" src="images/3.png" alt="Right Hills Image">
-        <img id="left-hills" src="images/4.png" alt="Left Hills Image">
-     </section>
-    
-
-     <section id="About">
-       <!-- Blog Section -->
-       <section id ="recent">
-
-        <div class="recent-heading">
-          <span> My Recent Posts</span>
-        </div>
-       
+          <img id="background" src="images/5.png" alt="Background Image">
+          <img id="moon" src="images/8.png" alt="Moon Image">
+          <img id="mountains" src="images/7.png" alt="Mountain Image">
+          <img id="mountain1" src="images/6.png" alt="Mountain1 Image">
+          <img id="right-hills" src="images/3.png" alt="Right Hills Image">
+          <img id="left-hills" src="images/4.png" alt="Left Hills Image">
       </section>
+
+      <section id="About">
+          <!-- Blog Section -->
+          <section id ="recent">
+              <div class="recent-heading">
+                  <span> My Recent Posts</span>
+              </div>
+          </section>
                 
 <!-- Blog container -->
         <div class="recent-container">
@@ -125,39 +151,26 @@
 
     
       <script>
-
-
-
         function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
-              document.getElementById("about-main").style.marginLeft = "250px";
-              document.getElementById("menu-bar").style.marginLeft = "250px";
-            
-          }
-          
-          function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-              document.getElementById("about-main").style.marginLeft = "0px";
-              document.getElementById("menu-bar").style.marginLeft = "0";
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("menu-bar").style.marginLeft = "250px";
+        }
 
-            
-          }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("menu-bar").style.marginLeft = "0";
+        }
 
-          window.addEventListener("scroll", () => {
+        window.addEventListener("scroll", () => {
             const scrollPosition = window.scrollY;
-        
-            document.querySelector("#mountain1").style.marginTop = `${104 * scrollPosition}px`;
-            document.querySelector("#about-main").style.marginTop = `${scrollPosition * 0.3}px`;
-            document.querySelector("#moon").style.marginTop = `${scrollPosition * 0.2}px`;
-           
+
+            document.getElementById("moon").style.top = -scrollPosition * 0.2 + "px";
+            document.getElementById("mountains").style.top = -scrollPosition * 0.1 + "px";
+            document.getElementById("mountain1").style.top = -scrollPosition * 0.15 + "px";
+            document.getElementById("right-hills").style.top = -scrollPosition * 0.05 + "px";
+            document.getElementById("left-hills").style.top = -scrollPosition * 0.05 + "px";
         });
-        
-        </script> 
+    </script>
 
- 
-
-        
 </body>
 </html>
-
-
