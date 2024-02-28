@@ -428,7 +428,7 @@ body {
     font-weight: 400;
 }
 .back p{
-    font-size: 14px;
+    font-size: 12px;
 }
 .back p span{
     font-weight: 600;
@@ -437,9 +437,7 @@ body {
     width: 120px;
 }
 .row{
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .col{
     flex: 1;
@@ -449,30 +447,20 @@ body {
     position: relative;
 }
 .col h2{
-    font-size: 20px;
+    font-size: 13px;
+    text-align: center;
 }
 .col::after{
-    content: '';
-    width: 1.5px;
-    height: 20px;
-    background: #7800ad;
-    position: absolute;
-    top: 5px;
-    right: 0;
+    display: none
 } 
 .card:hover .card-inner{
     transform: rotateY(180deg);
 }
 
 .col::after{
-    content: '';
-    width: 1.5px;
-    height: 20px;
-    background: #7800ad;
-    position: absolute;
-    top: 5px;
-    right: 0;
+    display: none
 } 
+
 .card:hover .card-inner{
     transform: rotateY(180deg);
 }
@@ -556,7 +544,7 @@ body {
     position: absolute;
     color: #FF5F8D;
     transform: translateY(-50%, 50%);
-    z-index: 3; /* Ensure the about-main is above the mountain */
+    z-index: -3; /* Ensure the about-main is above the mountain */
 }
 
 #about-main h2 {
@@ -568,7 +556,7 @@ body {
     text-decoration: underline overline double 2px;
     text-decoration-skip-ink: none;
     text-underline-offset: 0.05em;
-    z-index: 3; /* Adjusted to a positive value */
+    z-index: -3; /* Adjusted to a positive value */
 }
 
 #Parallax {
@@ -595,16 +583,16 @@ body {
 
 
 #background{
-    z-index:3;
+    z-index: -22;
 }
 
 #right-hills{
 
-    z-index: 4;
+    z-index: -2;
 }
 
 #left-hills{
-    z-index:3;
+    z-index: -2;
 }
 @keyframes loadAnimation {
     0% {
