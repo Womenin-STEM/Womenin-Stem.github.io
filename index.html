@@ -129,9 +129,8 @@
              <!--img-->
              <div class="recent-text">
               <span>15/02/2024 / How to Limit Stress</span>
-              <a href="blog.html" class="blog-title" >How can you deal with the stress?</a>
+              <a href="blog.html#post1">Read the blog post on Equality among peers</a>
               <p> This is all about how can women in STEM deals with the stress of working...</p>
-              <a href="blog.html">Read more</a>
 
 
              </div>
@@ -151,9 +150,8 @@
            <!--img-->
            <div class="recent-text">
             <span>17/02/2024 / Famous Women in STEM</span>
-            <a href="blog.html" class="blog-title" > Introduction to Famous Women in STEM</a>
+            <a href="blog.html#post5">Read the post on Famous Women in STEM</a>
             <p> This blog gives an introduction to famous women in STEM across different fields </p>
-            <a href="blog.html">Read more</a>
 
            </div>
          
@@ -171,10 +169,8 @@
              <!--img-->
              <div class="recent-text">
               <span>20/02/2024 / Networking </span>
-              <a href="blog.html" class="blog-title" >How to network in STEM field?</a>
+              <a href="blog.html#post6" class="blog-title" >How to network in STEM field?</a>
               <p> This is all about how can we talk to someone and connect to someone within the field.</p>
-              <a href="blog.html">Read more</a>
-
 
              </div>
       
@@ -199,10 +195,21 @@
             document.querySelector("#mountain1").style.marginTop = `${104 * scrollPosition}px`;
             document.querySelector("#about-main").style.marginTop = `${scrollPosition * 0.3}px`;
             document.querySelector("#moon").style.marginTop = `${scrollPosition * 0.2}px`;
-
-           
         });
-        
+
+        // Function to open modal based on hash in URL
+    function openModalFromHash() {
+      const hash = window.location.hash.substring(1); // Remove the "#" character
+      if (hash) {
+          const modal = document.getElementById(hash);
+          if (modal) {
+              modal.style.display = "block";
+          }
+      }
+  }
+
+  // Call the function when the page loads
+  window.addEventListener("load", openModalFromHash);       
        
 </script>
 
