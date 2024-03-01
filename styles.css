@@ -96,93 +96,84 @@ body {
 
 
 /*HOME PAGE BLOG - MOST RECENTS*/
-#recent{
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    flex-direction:column;
-    padding: 40px;
-
-}
-
-.re3cent-box{
-    width:350px;
-    background-color: white;
-    border: 1px  sold #ececec;
-    margin: 20px
-}
-
-.recent-container{
+#recent {
     display: flex;
-    justify-content: center; 
-    align-items:center; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.recent-box {
+    width: 350px;
+    height: 600px; /* Set a fixed height for the box */
+    background-color: white;
+    border: 1px solid #ececec;
+    margin: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.recent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px 0px;
     flex-wrap: wrap;
 }
 
-.recent-heading span{
-
-    color:#FF5F8D
-    
+.recent-heading span {
+    color: #FF5F8D;
 }
 
-.recent-box{
-    width:350px;
-    background-color:white;
-    border: 1px solid #ececec;
-    margin: 20px;
+.recent-img {
+    width: 100%;
+    height: 90%; /* Set a fixed height for the image */
 }
 
-.recent-img{
+.recent-img img {
     width: 100%;
     height: 100%;
-}
-
-.recent-img img{
-    width: 100%;
-    height: auto;
     object-fit: cover;
 }
 
-.recent-text{
-    padding: 30px;
-    display: flex; 
+.recent-text {
+    padding: 20px;
+    display: flex;
     flex-direction: column;
+    height: 100%; /* Set a fixed height for the text */
 }
 
-.recent-text span{
+.recent-text span {
     color: #f33c3c;
     font-size: 0.9rem;
 }
 
-.recent-text  .blog-title{
-    font-size: 1.3fem;
-    font-weight: 500; 
+.recent-text .blog-title {
+    font-size: 1.3em;
+    font-weight: 500;
     color: black;
 }
 
-.recent-text  .blog-title:hover{
+.recent-text .blog-title:hover {
     color: #f33c3c;
     transition: all ease 0.3s;
 }
 
-.recent-text p{
-    
+.recent-text p {
     color: black;
-    font-size: 1.3fem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    font-size: 1.3em;
+    margin: 10px 0;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 20px 0px; 
+    flex-grow: 1; /* Allow the text to grow within the available space */
 }
 
-.recent-text a:hover{
-    
+.recent-text a:hover {
     color: #f33c3c;
     transition: all ease 0.3s;
-
 }
 
 /* BLOG.HTML */
