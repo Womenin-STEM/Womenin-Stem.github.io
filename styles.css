@@ -77,17 +77,15 @@ body {
     z-index: 2;
 }
 
-
 #main h2 {
     font-family: "valentines day";
-    font-size: 150px;
-    flex: 1; /* Take remaining space */
-    text-align: center; /* Center the text within the available space */
-    color: #FF5F8D; /* Set the color of the title */
-    text-decoration: underline overline double 2px;/* Add an underline and overline to the title */
-    text-decoration-skip-ink: none; /* Ensure that the underline and overline do not cut through the text */
+    font-size: 8vw; /* Set font size as a percentage of viewport width */
+    flex: 1;
+    text-align: center;
+    color: #FF5F8D;
+    text-decoration: underline overline double 2px;
+    text-decoration-skip-ink: none;
     text-underline-offset: 0.05em;
-    
 }
 
 /* BODY TEXT */

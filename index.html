@@ -203,18 +203,17 @@
         });
 
         // Function to open modal based on hash in URL
-    function openModalFromHash() {
-      const hash = window.location.hash.substring(1); // Remove the "#" character
-      if (hash) {
-          const modal = document.getElementById(hash);
-          if (modal) {
-              modal.style.display = "block";
-          }
-      }
-  }
-
-  // Call the function when the page loads
-  window.addEventListener("load", openModalFromHash);       
+        function openModalFromHash() {
+          const hash = window.location.hash.substring(1); // Remove the "#" character
+          if (hash) {
+              const modal = document.getElementById(hash);
+              if (modal) {
+                  modal.style.display = "block";
+              }
+             }
+            }
+            // Call the function when the page loads
+            window.addEventListener("load", openModalFromHash);       
        
 </script>
 
