@@ -151,12 +151,6 @@ body {
     font-size: 0.9rem;
 }
 
-.recent-text .blog-title {
-    font-size: 1.3em;
-    font-weight: 500;
-    color: black;
-}
-
 .recent-text .blog-title:hover {
     color: #f33c3c;
     transition: all ease 0.3s;
