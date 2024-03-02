@@ -82,7 +82,7 @@ body {
     font-size: 8vw; /* Set font size as a percentage of viewport width */
     flex: 1;
     text-align: center;
-    color: #FF5F8D;
+    color: #ff5f8d;
     text-decoration: underline overline double 2px;
     text-decoration-skip-ink: none;
     text-underline-offset: 0.05em;
@@ -448,7 +448,7 @@ body {
 
 
 
-/*About*/
+/*Home page parallax*/
 
 #parallax-main {
     position: absolute;
