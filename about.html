@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,24 +25,30 @@
             width: 100%;
             color: #000;
             flex: none;
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
-            padding: 20px; /* Add padding to create space between text and border */
+            box-sizing: border-box;
+            /* Include padding and border in the element's total width and height */
+            padding: 20px;
+            /* Add padding to create space between text and border */
         }
+
         @font-face {
             font-family: "valentines day";
             src: url("fonts/valentines day/Valentines Day.otf");
         }
-        h1{
+
+        h1 {
             font-size: 100px;
             text-align: center;
-            font-family:valentines day;
+            font-family: valentines day;
             color: #70263c;
         }
-        p{
+
+        p {
             font-size: 20px;
             text-align: center;
             font-weight: bold;
         }
+
         /* Added CSS for the fixed navigation button */
         #menu-bar {
             position: fixed;
@@ -50,10 +57,12 @@
         #menu-bar span {
             font-size: 30px;
             cursor: pointer;
-            color: #FF5F8D; /* Adjust the color of the menu icon */
+            color: #FF5F8D;
+            /* Adjust the color of the menu icon */
         }
     </style>
 </head>
+
 <body>
 
     <div id="mySidenav" class="sidenav">
@@ -64,13 +73,13 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <div id ="menu-bar">
+    <div id="menu-bar">
 
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
     </div>
-    
-    
+
+
     <script>
 
         function openNav() {
@@ -78,30 +87,40 @@
             document.getElementById("menu-bar").style.marginLeft = "250px";
 
         }
-        
+
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("menu-bar").style.marginLeft = "0";
 
-           
+
         }
-        
+
     </script>
 
     <section>
         <h1>~WHO WE ARE~</h1>
-        <p>We are a group of students studying computer science who are committed to encouraging diversity and equality in STEM-related fields.  After meeting at the same university while working on a group project, we made the decision to work together to create this blog with the goal of showcasing the experiences and accomplishments of women in STEM. Our team is made up of people with a variety of abilities and backgrounds who are all motivated to encourage and inspire women to choose professions in math, science, technology, engineering, and other related fields.</p>
+        <p>We are a group of students studying computer science who are committed to encourage equality and diversity in
+            STEM-related fields. To showcase our experiences and accomplishments within STEM, we decided to work
+            together to create this blog as part of our team project. Our team is made up of people who hold a variety
+            of abilities and come from different backgrounds. We're all motivated to encourage and inspire women to
+            choose professions in STEM fields.</p>
     </section>
 
     <section>
         <h1>~WHAT INSPIRED US~</h1>
-        <p>Our interest and curiosity in technology inspired us to pursue a degree in computer science. However, it was our experiences in the classroom that really sparked our enthusiasm for promoting gender equality in STEM fields. We have personally observed the difficulties and underrepresentation of women in our field. These encounters acted as a drive to action, inspiring us to establish a platform where women's voices and accomplishments could be celebrated and recognised. Even though we encountered obstacles along the way, we persisted because we wanted to make a difference and drive positive change in the industry.</p>
+        <p>Our experiences within university sparked our enthusiasm to promote gender equality in STEM fields. We have
+            personally observed the difficulties and lack of representation of women in our field, hence encouraging us
+            to make this blog. These encounters acted as a drive to establish a platform where women's voices and
+            accomplishments could be celebrated and recognised. The core purpose is to make a difference and influence
+            positive change in the industry.</p>
     </section>
 
     <section>
         <h1>~WHAT WE WANT TO DO~</h1>
-        <p>Our main goal is to create a supportive community that supports women in STEM fields while recognising and resolving the issues that frequently affect them, like underrepresentation and systematic disadvantages.  Our mission is to create an environment where women feel empowered and supported to follow their passions and ambitions. By amplifying their voices, recognising their contributions, and advocating for their representation, we strive to foster a sense of belonging and validation.  In the end, we want to create a setting where women in STEM may succeed on a personal and professional level, helping to create a more equal and diverse future for the industry. Together, we are dedicated to empowering every woman to pursue her dreams and make meaningful contributions to the world of science and technology.</p>
+        <p>Our mission is to create a supportive community for women in STEM to provide solutions to issues that frequently affect them. This allows women to feel empowered and supported to follow their passions and ambitions. Essentially, we want to create a setting where women can succeed in their own journey through connecting with people dedicated to persevere. Together, we would like to create change to empower every woman to pursue her dreams and contribute to the world of science and technology.
+        </p>
     </section>
 
 </body>
+
 </html>
