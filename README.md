@@ -1,4 +1,4 @@
-# Website Link 
+# Welcome
 Welcome to the Women in STEM blog, to view the site, click the link below. 
 
 https://womenin-stem.github.io
